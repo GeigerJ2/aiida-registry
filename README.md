@@ -3,10 +3,12 @@
 This repository contains the **source** of the official registry of AiiDA plugins.
 
 <p align="center">
- <a href="http://aiidateam.github.io/aiida-registry" rel="Go to the AiiDA plugin registry">
+ <a href="https://aiida.net/plugin-registry/" rel="Go to the AiiDA plugin registry">
   <img src="aiida_registry/static/gotobutton.svg">
  </a>
  </p>
+
+The browser UI lives at [aiida.net/plugin-registry](https://aiida.net/plugin-registry/), built from this repo's `plugins_metadata.json` (published daily to [`aiidateam.github.io/aiida-registry/plugins_metadata.json`](https://aiidateam.github.io/aiida-registry/plugins_metadata.json)). This repository owns `plugins.yaml` and the metadata-generation pipeline.
 
 If you are starting to develop a new plugin
 (e.g. using the [AiiDA plugin cutter](https://github.com/aiidateam/aiida-plugin-cutter))
@@ -17,6 +19,9 @@ community of your ongoing work.
 
 By default, the list of plugins is now sorted by the latest release, so plugins that are under active development automatically bubble up to the top.
 The release date is determined by the date of the latest [PyPI](https://pypi.org/) release. Plugins not released to PyPI will have no release date.
+
+## Note for maintaner of this repo:
+github-pages currently serves as redirects to https://aiida.net/plugin-registry/. In order to keep the SEO scores we'll have to keep it this way for a while.
 
 ## How to register a plugin
 
